@@ -39,4 +39,14 @@ public class JavaArraysBeginnersPratices {
         double ortaHesabiTapmaq = cem / arrInt.length;
         System.out.println(ortaHesabiTapmaq);
     }
+    public static String pratices5(){
+        int[] intArr = {1,2,3,4,5,6};
+        int findNumbers = 11;
+        for (int i=0;i<intArr.length;i++){
+            if (findNumbers == intArr[i]){
+                return findNumbers + " - deyeri massivde tapildi";
+            }
+        }
+        return findNumbers + " - deyeri massivde tapilmadi";
+    }
 }
