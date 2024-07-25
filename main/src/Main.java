@@ -2,18 +2,17 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        String ss = foo();
-        System.out.println(ss);
+        int netice = foo();
+        System.out.println(netice);
     }
-
-    public static String foo(){
-        int[] intArr = {1,2,3,4,5,6};
-        int findNumbers = 11;
-        for (int i=0;i<intArr.length;i++){
-            if (findNumbers == intArr[i]){
-                return findNumbers + " - deyeri massivde tapildi";
+    public static int foo(){
+        int[] arrInt = {25,14,56,15,36};
+        int findIndex = 56;
+        for (int i=0;i<arrInt.length;i++){
+            if (arrInt[i] == findIndex){
+                return i;
             }
         }
-        return findNumbers + " - deyeri massivde tapilmadi";
+        return -1;
     }
 }

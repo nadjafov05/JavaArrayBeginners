@@ -49,4 +49,14 @@ public class JavaArraysBeginnersPratices {
         }
         return findNumbers + " - deyeri massivde tapilmadi";
     }
+    public static int pratices(){
+        int[] arrInt = {25,14,56,15,36};
+        int findIndex = 56;
+        for (int i=0;i<arrInt.length;i++){
+            if (arrInt[i] == findIndex){
+                return i;
+            }
+        }
+        return -1;
+    }
 }
