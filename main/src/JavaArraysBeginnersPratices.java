@@ -29,4 +29,14 @@ public class JavaArraysBeginnersPratices {
             System.out.println("");
         }
     }
+    public static void pratices4(){
+        int[] arrInt = {1,2,3,4,5};
+
+        int cem = 0;
+        for (int i=0;i<arrInt.length;i++){
+            cem+=arrInt[i];
+        }
+        double ortaHesabiTapmaq = cem / arrInt.length;
+        System.out.println(ortaHesabiTapmaq);
+    }
 }
