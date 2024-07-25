@@ -2,13 +2,16 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int[] numberArr = {1,2,3,5};
-        int cem = 0; //1 + 2 + 3 + 5
+        int[][] arrInt = new int[5][5];
 
-        for (int i=0;i<numberArr.length;i++){
-            cem+=numberArr[i];
+        for (int i=0;i<arrInt[0].length;i++){
+            for (int j=0;j<arrInt[4].length;j++){
+                System.out.print("=");
+                if (j<arrInt[i].length - 1){
+                    System.out.print(" ");
+                }
+            }
+            System.out.println("");
         }
-        System.out.println(cem);
-
     }
 }
