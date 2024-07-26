@@ -2,17 +2,14 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        int netice = foo();
-        System.out.println(netice);
-    }
-    public static int foo(){
-        int[] arrInt = {25,14,56,15,36};
-        int findIndex = 56;
-        for (int i=0;i<arrInt.length;i++){
-            if (arrInt[i] == findIndex){
-                return i;
-            }
+        int[] arrA = {1,2,3,5,6,9,8,7,4};
+        System.out.println("A arrayindaki orginal melumatlar : "+Arrays.toString(arrA));
+        int[] arrB = new int[9];
+
+        for (int i=0;i<arrA.length;i++){
+            arrB[i] = arrA[i];
         }
-        return -1;
+
+        System.out.println("B arrayinda`ki komyalanmis melumatlar : "+Arrays.toString(arrB));
     }
 }

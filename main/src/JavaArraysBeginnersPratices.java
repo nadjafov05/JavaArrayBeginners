@@ -49,7 +49,7 @@ public class JavaArraysBeginnersPratices {
         }
         return findNumbers + " - deyeri massivde tapilmadi";
     }
-    public static int pratices(){
+    public static int pratices6(){
         int[] arrInt = {25,14,56,15,36};
         int findIndex = 56;
         for (int i=0;i<arrInt.length;i++){
@@ -58,5 +58,16 @@ public class JavaArraysBeginnersPratices {
             }
         }
         return -1;
+    }
+    public static void pratices7(){
+        int[] arrA = {1,2,3,5,6,9,8,7,4};
+        System.out.println("A arrayindaki orginal melumatlar : "+Arrays.toString(arrA));
+        int[] arrB = new int[9];
+
+        for (int i=0;i<arrA.length;i++){
+            arrB[i] = arrA[i];
+        }
+
+        System.out.println("B arrayinda`ki komyalanmis melumatlar : "+Arrays.toString(arrB));
     }
 }
